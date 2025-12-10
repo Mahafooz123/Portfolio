@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-primary: #0F0F0F; /* Slightly darker primary */
+  --color-dark-secondary: #222222; /* Slightly darker secondary */
+  --color-accent-gold: #D4A34F; /* Richer, deeper gold */
+  --color-light-text: #FAFAFA;
+
+  /* Custom golden shadow variable for reuse */
+  --shadow-gold-glow: 0 4px 15px rgba(212, 163, 79, 0.3), 0 0 5px rgba(212, 163, 79, 0.1);
+
+  --font-sans: "Playfair Display", serif;
+  --font-mono: "Source Code Pro", monospace;
+}
+
+@layer base {
+  body {
+    background: var(--color-dark-primary);
+    color: var(--color-light-text);
+  }
+  * {
+    border-radius: 0 !important;
+  }
+}
+
+@layer utilities {
+  .shadow-gold-glow {
+    box-shadow: var(--shadow-gold-glow);
+  }
+}

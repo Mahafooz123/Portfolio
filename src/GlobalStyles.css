@@ -1,0 +1,20 @@
+/* src/GlobalStyles.css */
+
+/* Custom base styles that override defaults and enforce design aesthetic */
+
+/* Enforce sharp corners globally */
+* {
+  border-radius: 0 !important;
+}
+
+/* Remove default browser body margins/padding if Tailwind Preflight doesn't handle them fully */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply luxury serif font to headings (relying on the definition in tailwind.config.js) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; 
+}
